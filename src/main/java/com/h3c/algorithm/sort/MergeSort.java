@@ -33,20 +33,16 @@ package com.h3c.algorithm.sort;
  *
  *
  */
-public class MergeSort {
-
-
-    private static int[] array = {500,3,2,87,9,2,67,1};
+public class MergeSort extends Sort {
 
     /**
      * 初始原数组的左边数组
      */
-    private static int[] leftArray = new int[array.length >> 1];
-    public static void main(String[] args) {
-        sort(0,array.length);
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
+    private  int[] leftArray;
+
+    public MergeSort(int size) {
+        super(size);
+        leftArray = new int[array.length >> 1];
     }
 
     /**
@@ -54,7 +50,7 @@ public class MergeSort {
      * @param begin
      * @param end
      */
-    public static void sort(int begin, int end){
+    public  void sort(int begin, int end){
         //子数组只有一个元素时返回
         if((end -begin) < 2) {
             return;
@@ -81,7 +77,7 @@ public class MergeSort {
      * @param mid
      * @param end
      */
-    public static void merge(int begin, int mid, int end){
+    public  void merge(int begin, int mid, int end){
 
         /**
          * li:当前需要比较元素leftarray的索引
@@ -124,5 +120,10 @@ public class MergeSort {
               array[ai++] = leftArray[li++];
           }
         }
+    }
+
+    public void sort() {
+        sort(0,array.length);
+        printArray(array);
     }
 }
