@@ -30,4 +30,14 @@ public abstract class Sort {
         array[i] = array[j];
         array[j] = temp;
     }
+
+    protected int cmp(int i,int j){
+       if(array[i] < array[j]){
+           return -1;
+       } else if(array[i] > array[j]) {
+           return 1;
+       }else {
+           return 0;
+       }
+    }
 }

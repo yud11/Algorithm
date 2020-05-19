@@ -9,5 +9,6 @@ public class MainTest {
     public static void main(String[] args) {
         new MergeSort(100).sort();
         new QuickSort(100).sort();
+        new ShellSort(100).sort();
     }
 }
