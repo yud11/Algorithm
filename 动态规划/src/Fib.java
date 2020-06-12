@@ -1,5 +1,3 @@
-package com.h3c.algorithm;
-
 /**
  * @author yudi
  * @date 2020-02-06 20:20

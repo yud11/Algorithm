@@ -1,5 +1,3 @@
-package com.h3c.algorithm;
-
 /**
  * 二叉查找树
  */

@@ -1,5 +1,3 @@
-package com.h3c.algorithm.sort;
-
 import java.util.ArrayList;
 import java.util.List;
 
