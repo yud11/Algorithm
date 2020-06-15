@@ -71,7 +71,7 @@ public class ArrayList<E> {
         }
         E old = array[index];
         array[index] = element;
-       return old;
+        return old;
     }
 
     /**
@@ -133,7 +133,7 @@ public class ArrayList<E> {
 
 
     /**
-     * 清楚所有元素
+     * 清除所有元素
      */
     public void clear() {
         for (int i = 0; i < array.length; i++) {
