@@ -83,10 +83,16 @@ public class LinkedList<E> extends AbstractList<E>  {
          * 平均：O(n)
          */
         rangeCheck(index);
-        Node<E> prev = node(index-1);
-        E e = prev.next.element;
-        prev.next = prev.next.next;
-        return e;
+        Node<E> node = first;
+        if (index == 0) {
+            first = first.next;
+        } else {
+            Node<E> prev = node(index - 1);
+            node = prev.next;
+            prev.next = node.next;
+        }
+        size--;
+        return node.element;
     }
 
     @Override
