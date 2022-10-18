@@ -1,3 +1,5 @@
+package structure;
+
 /**
  * @author yudi
  * @date 2020-05-16 14:30
