@@ -12,7 +12,10 @@ public class MainTest {
 //        new ShellSort(100).sort();
 //        new SelectSort(100).sort();
 //        new BubbleSort(100).sort();
-        new InsertSort(100).sort();
+        //new InsertSort(100).sort();
+        new QuickSort3(100).sort();
+
+
 
     }
 }
