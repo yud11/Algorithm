@@ -13,7 +13,8 @@ public class MainTest {
 //        new SelectSort(100).sort();
 //        new BubbleSort(100).sort();
         //new InsertSort(100).sort();
-        new QuickSort3(100).sort();
+        //new QuickSort3(100).sort();
+        new HeapSort(100).sort();
 
 
 
